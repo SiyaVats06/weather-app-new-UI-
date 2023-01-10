@@ -5,10 +5,7 @@
 }
 
 .outer {
-    background-image: url('https://images.hdqwalls.com/wallpapers/orange-landscape-morning-minimal-5k-mi.jpg');
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,6 +21,7 @@
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .morefive{
     background-image: url('https://images.hdqwalls.com/wallpapers/orange-landscape-morning-minimal-5k-mi.jpg');
@@ -31,7 +29,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.black{
+    color: black;
+}
 .container {
     width: 80%;
     height: 70vh;
@@ -39,7 +39,8 @@
     grid-template-columns: repeat(2, 1fr);
     accent-color: pink;
     border: 1px solid white;
-    box-shadow: 1px 4px 8px rgba(231, 94, 9, 0.896);
+    box-shadow: 1px 4px 8px rgba(0,0,0,0.15);
+    border-radius: .5rem;
 
 
 }
@@ -51,7 +52,7 @@
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: .25rem;
+    border-radius: .5rem;
     position: relative;
 
 }
@@ -117,7 +118,7 @@
 .right {
     background-image: url('https://wallpapercave.com/wp/wp11387412.jpg');
     background-color: rgb(37, 35, 35);
-    border-radius: .25rem;
+    border-radius: .5rem;
     position: relative;
     background-origin: content-box;
     background-repeat: no-repeat;
@@ -280,7 +281,8 @@
 @media screen and (350px <= width < 400px) {
 
 .wind{
-    margin:0
+    margin:0;
+    
 
 }
 .container{
@@ -338,11 +340,12 @@
 }
 }
 
-@media screen and (250px <= width < 350px) {
+@media screen and ( max-width:350px) {
     .wind{
-        margin:0
-    
+        margin:0;
+        padding: .4rem;
     }
+ 
     .container{
         height: 60vh;
     }
@@ -357,6 +360,7 @@
     }
     .search-value{
         margin: 0;
+        padding: .4rem;
     }
     .city{
         font-size: 1rem;

@@ -10,7 +10,7 @@ const input = document.getElementById('input-city'),
 	  CurrTemp=document.getElementById('curr-temp'),
 	  CurrPlace=document.getElementById('city'),
 	  description=document.getElementById('description'),
-	  body=document.getElementById('outer'),
+	  body=document.body,
 	  left=document.getElementById('left'),
 	  CurrCountry=document.getElementById('country')
 
@@ -49,14 +49,17 @@ fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${cityName}`, option
 if(response.current.temp_c <= 5){
   body.classList.add('lessfive');
   left.classList.add('lessfive')
+ 
   body.classList.remove('morefive');
   left.classList.remove('morefive')
+
 }
 else{
 	body.classList.remove('lessfive');
 	left.classList.remove('lessfive')
 	body.classList.add('morefive');
 	left.classList.add('morefive')
+	
 }
 	CurrTemp.innerText=response.current.temp_c +"°C";
 	CurrPlace.innerText=response.location.name;
