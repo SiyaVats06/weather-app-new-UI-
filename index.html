@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="outer" id="outer">
+        <div class="container">
+
+            <div class="left" id="left">
+                <div class="nav__container">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Weather <i class="uil uil-cloud"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="all-data">
+                    <div id="curr-temp" class="temp" id="temp">16 <span id="degree" class="degree">°C</span></div>
+                    <div id="curr-place"  class="place">
+                        <div class="city" id="city">Delhi</div>
+                        <div class="country" id="country">India</div>
+                    </div>
+                    <div id="description" class="description" id="desc">cloudy</div>
+                </div>
+                <div class="date-data">
+
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="city-search">
+                    <div class="input"><input id="input-city" 
+                     class="input-city" type="text" placeholder="city name"></div>
+                    <div id="search-city" class="search"><i class="uil uil-search search-bar"></i></div>
+                </div>
+
+
+
+                <div class="all-values">
+                    <div class="search-value">
+                        <div class="max temperature">
+                            <div class="max-temp values">Temperature</div>
+                            <div id="temper" class=" values"></div>
+                        </div>
+                       
+                        <div class="temperature">
+                            <div class="feels-like values">Feels-Like</div>
+                            <div id="feels-like" class=" values">25</div>
+                        </div>
+                        <div class="temperature">
+                            <div class="clout-cpt values">Cloud</div>
+                            <div id="cloud"  class=" values">25</div>
+                        </div>
+                        <div class=" min temperature">
+                            <div class="uv-value values"> UV</div>
+                            <div id="uv" class=" values">25</div>
+                        </div>
+                    </div>
+
+                    <div class="line-break">
+                       
+                    </div>
+
+
+                    <div class="wind">
+                        <div class=" min temperature">
+                            <div class="values"> Wind-Speed</div>
+                            <div id="wind-speed" class="values">25</div>
+                        </div>
+                        <div class="temperature">
+                            <div class="values"> Wind-degree</div>
+                            <div id="wind-degree" class=" values">25</div>
+                        </div>
+                        <div class="temperature">
+                            <div class="values">Humidity</div>
+                            <div id="humidity" class=" values"> 25</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
