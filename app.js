@@ -60,6 +60,7 @@ else{
 	body.classList.add('morefive');
 	left.classList.add('morefive')
 	
+	
 }
 	CurrTemp.innerText=response.current.temp_c +"°C";
 	CurrPlace.innerText=response.location.name;
